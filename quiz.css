@@ -1,0 +1,23 @@
+body {
+    padding: 15px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+}
+
+.dark-mode {
+    background-color: #222222;
+    color: white;
+}
+
+#redtext {
+    color: red;
+}
+
+#orangetext {
+    color: orange;
+}
+
+#greentext {
+    color: green;
+}

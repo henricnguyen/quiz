@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
+    <title>Quiz</title>
+    <h1>Quiz</h1>
 </head>
 <body>
-    
+    <div>
+        <h2>Toggle Dark/Light mode</h2>
+        <p>Click the button to choose between dark or light mode.</p>
+        <button onclick="myBtn()">Toggle Dark/Light mode</button>
+    </div>
+    <form name="quiz" id="quiz">
+    <div>
+        <p>The quiz consists of 7 questions, answer them below</p>
+    </div>
+    <div>
+        <h3>1. The capital capital city of the US is New York</h3>
+        <p><input type="radio" name="question1" value="True">True</p>
+        <p><input type="radio" name="question1" value="False">False</p>
+    </div>
+    <div>
+        <h3>2. The main character in Gladiator is Russell Crowe</h3>
+        <p><input type="radio" name="question2" value="True">True</p>
+        <p><input type="radio" name="question2" value="False">False</p>
+    </div>
+    <div>
+        <h3>3. There are 6 continents in the world</h3>
+        <p><input type="radio" name="question3" value="True">True</p>
+        <p><input type="radio" name="question3" value="False">False</p>
+    </div>
+    <div>
+        <h3>4. What company made MacBooks? (Use lowercase)</h3>
+        <input type="text" name="question4" placeholder="Type in your answer" />
+    </div>
+    <div>
+        <h3>5. Los Angeles is a city in what state? (Use lowercase)</h3>
+        <input type="text" name="question5" placeholder="Type in your answer" />
+    </div>
+    <div>
+        <h3>6. What is the first and lastname of the 44th president of the US? (Use lowercase)</h3>
+        <input type="text" name="question6" placeholder="Type in your answer" />
+    </div>
+    <div>
+        <h3>7. Who of these were in the movie "Coach Carter"?</h3>
+        <p><input type="checkbox" name="question7" value="correct">Channing Tatum</p>
+        <p><input type="checkbox" name="question7" value="wrong">Eminem</p>
+        <p><input type="checkbox" name="question7" value="correct">Ashanti</p>
+        <p><input type="checkbox" name="question7" value="wrong">Ice Cube</p>
+    </div>
+    <div>
+        <input type="button" name="" value="Get results!" onclick="check()">
+    </div>
+    </form>
+    <script src="quiz.js"></script>
 </body>
 </html>
