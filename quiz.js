@@ -21,33 +21,36 @@ function check(){
     if (q6=="barack obama") {score++}
     
         let checkboxes = document.getElementsByName("question7");
-        let checkboxChecked = []; 
+        let q7 = 0; 
         for (let i = 0; i < checkboxes.length; i++) {
-            const element = checkboxes[i];
-            if (element.checked === true){
-                if (element.value === "correct"){
-                    score++;
+            let element = checkboxes[i];
+            if (element.checked === true) {
+                if (element.value === "correct") {
+                    q7++;
                 }
-                else if (element.value === "wrong"){   
-                score--;
-            }
+                else if (element.value === "wrong") {   
+                    q7--;
+                }
             }
         }
-        
+        if (q7 === 2) {
+            score++;
+        }
         if(score < 4) {
             let text = "Your score is: " + score + ". Try harder!";
             let result = text.fontcolor("red");
             document.write(result)    
-      } else if(score >= 4 && score< 8) {
+      } else if(score >= 4 && score< 7) {
         let text = "Your score is: " + score + ". Not good, not bad!";  
         let result = text.fontcolor("orange")
         document.write(result)
-      } else if (score === 8) {
+      } else if (score === 7) {
         let text = "Your score is: " + score + ". Congratulations, you got a full score!";
        let result = text.fontcolor("green")
-       document.write(result) 
+       document.write(result); 
     }
 }
+
 
     
 
