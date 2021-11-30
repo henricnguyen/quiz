@@ -32,8 +32,22 @@ function check(){
                 score--;
             }
             }
-        } 
+        }
+        
+        if(score < 4) {
+            let text = "Your score is: " + score + ". Try harder!";
+            let result = text.fontcolor("red");
+            document.write(result)    
+      } else if(score >= 4 && score< 8) {
+        let text = "Your score is: " + score + ". Not good, not bad!";  
+        let result = text.fontcolor("orange")
+        document.write(result)
+      } else if (score === 8) {
+        let text = "Your score is: " + score + ". Congratulations, you got a full score!";
+       let result = text.fontcolor("green")
+       document.write(result) 
     }
+}
 
     
 
